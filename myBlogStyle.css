@@ -30,6 +30,10 @@ p {
     padding: 20px;
 }
 
+#blogList{
+    margin-left: 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0px;
