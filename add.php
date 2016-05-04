@@ -57,7 +57,7 @@ include("connection.php"); //establish connection to DB  ?>
                 Submitted By: <input type="text" name="submittedAuthor">
 
                 <br><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submitButton">
 
                 <?
 

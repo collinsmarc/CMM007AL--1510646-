@@ -79,6 +79,11 @@ form {
 
 }
 
+#submitButton{
+    background-color: slategray;
+    color: white;
+}
+
 footer {
     color: darkslategray;
     padding: 30px;
