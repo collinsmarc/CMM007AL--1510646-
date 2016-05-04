@@ -87,6 +87,14 @@ form {
     height: 30px;
 }
 
+label{
+    float: left;
+    display:inline-block;
+    width:250px;
+    text-align: right;
+
+}
+
 footer {
     color: darkslategray;
     padding: 30px;
