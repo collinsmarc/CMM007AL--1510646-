@@ -4,6 +4,8 @@ body{
 
 header{
     margin-left: 10px;
+    text-align: justify;
+    float: left;
 }
 
 h1, h3 {
