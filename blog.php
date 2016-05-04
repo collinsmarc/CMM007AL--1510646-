@@ -45,7 +45,7 @@ $choice=$_GET["category"];
 
 
 
-    <h3>because the internet needs to know what I think</h3>
+
     <nav id="quickLinks">
         <ul>
             <li><a href="blog.php">All Blog Items</a></li>
