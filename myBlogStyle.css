@@ -66,11 +66,15 @@ a :hover {
 
 
 form{
-
     padding: 20px;
-
     font-family: 'Droid Sans', sans-serif;
 
+}
+
+#button{
+    background-color: slategray;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
