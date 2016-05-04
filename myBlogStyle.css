@@ -32,7 +32,7 @@ ul {
 
     padding: 10px;
     overflow: hidden;
-    width: 900px;
+    width: 960px;
 }
 
 li {
@@ -55,7 +55,8 @@ li a {
 }
 
 a :hover {
-    color: blue;
+    background-color: lightslategrey;
+    color: white;
 
 }
 
