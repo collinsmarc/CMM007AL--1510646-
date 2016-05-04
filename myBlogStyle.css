@@ -50,15 +50,16 @@ li a {
     text-decoration: none;
     padding: 15px;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 5px;}
 
-}
-
-a :hover {
+a:hover {
     background-color: lightslategrey;
     color: white;
-
 }
+
+
+
+
 
 #formEntry{
     display:inline-block;
