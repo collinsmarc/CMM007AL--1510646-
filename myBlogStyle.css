@@ -83,6 +83,8 @@ form {
     background-color: slategray;
     color: white;
     border-radius: 10px;
+    height: 20px;
+    width: 20px;
 }
 
 footer {
