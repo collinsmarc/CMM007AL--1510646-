@@ -82,9 +82,9 @@ form {
 #submitButton{
     background-color: slategray;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 80px;
-    height: 50px;
+    height: 30px;
 }
 
 footer {
