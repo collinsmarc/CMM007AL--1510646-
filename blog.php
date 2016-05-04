@@ -57,7 +57,7 @@ $choice=$_GET["category"];
     </nav>
 </header>
 
-<main>
+<main id="blogList">
 
     <?
 
