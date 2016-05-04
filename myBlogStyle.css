@@ -52,7 +52,7 @@ li a {
     color: black;
     font-family: 'Droid Sans', sans-serif;
     text-decoration: none;
-
+    padding: 15px;
     margin-left: 5px;
     margin-right: 5px;
 }
