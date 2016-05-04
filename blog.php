@@ -24,15 +24,15 @@ $choice=$_GET["category"];
          switch ($choice) {
             case "work":
                         echo " <h1>myBlog - Work </h1>
-    <h3>because the internet needs to know what I think</h3>";
+    <h3>because the internet needs to know what I think about work</h3>";
              break;
          case "university":
                       echo " <h1>myBlog - University </h1>
-     <h3>because the internet needs to know what I think</h3>";
+     <h3>because the internet needs to know what I think about university</h3>";
              break;
          case "family":
                       echo " <h1>myBlog - Family </h1>
-    <h3>because the internet needs to know what I think</h3>";
+    <h3>because the internet needs to know what I think about family</h3>";
             break;
 
 
