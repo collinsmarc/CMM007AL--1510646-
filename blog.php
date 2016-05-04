@@ -40,9 +40,12 @@ include("connection.php"); //establish connection to DB  ?>
 
 
     while ($row = $result->fetch_array()) {
-        echo "<h3><a href='#'>".$row["entryTitle"]."</a><p> by </p>".$row["submitter"]."</h3> ";
+        echo "<h3><a href='#'>".$row["entryTitle"]."</a> by ".$row["submitter"]."</h3> ";
         echo "<h4>".$row["category"]."</h4>";
         echo"<p>".$row["entrySummary"]."</p>";
+        echo "<br>";
+        echo"<p>-------------------------------------------------------------------</p>";
+        echo "<br>";
 
     }
 
