@@ -66,7 +66,10 @@ a:hover {
     color: white;
 }
 
-
+#formEntry {
+    display: inline-block;
+    text-align: left;
+}
 
 form {
     padding: 20px;
@@ -82,18 +85,6 @@ form {
     border-radius: 30px;
     width: 80px;
     height: 30px;
-}
-
-label{
-    float: left;
-    display:inline-block;
-    width:250px;
-    text-align: right;
-}
-
-input{
-    display:inline-block;
-    float:right;
 }
 
 footer {
