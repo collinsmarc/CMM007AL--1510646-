@@ -23,15 +23,15 @@ $choice=$_GET["category"];
     <?
          switch ($choice) {
             case "work":
-                        echo " <h1>myBlog - Work Exclusives</h1>
+                        echo " <h1>myBlog - Work </h1>
     <h3>because the internet needs to know what I think</h3>";
              break;
          case "university":
-                      echo " <h1>myBlog - University Exclusives </h1>
+                      echo " <h1>myBlog - University </h1>
      <h3>because the internet needs to know what I think</h3>";
              break;
          case "family":
-                      echo " <h1>myBlog - Family Exclusives</h1>
+                      echo " <h1>myBlog - Family </h1>
     <h3>because the internet needs to know what I think</h3>";
             break;
 
@@ -117,7 +117,7 @@ $choice=$_GET["category"];
 
     else{
 
-        $sql = "SELECT * FROM blogview where";
+        $sql = "SELECT * FROM blogview";
         $result = $db->query($sql);
 
 
