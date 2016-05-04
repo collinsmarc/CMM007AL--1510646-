@@ -13,7 +13,7 @@
 <body>
 
 <header>
-    <h1>myBlog</h1>
+    <h1><a href="index.php" myBlog</a></h1>
 
     <h3>because the internet needs to know what I think</h3>
     <nav id="quickLinks">
