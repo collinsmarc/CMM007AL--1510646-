@@ -1,5 +1,7 @@
 <?php
-include("connection.php"); //establish connection to DB  ?>
+include("connection.php"); //establish connection to DB
+
+?>
 
 
 <!DOCTYPE html>
@@ -35,7 +37,9 @@ include("connection.php"); //establish connection to DB  ?>
 <main>
 
     <?
-    $sql = "SELECT * FROM blogview";
+
+    $choice=$_GET["category"];
+    $sql = "SELECT * FROM blogview where category LIKE $choice";
     $result = $db->query($sql);
 
 
