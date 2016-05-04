@@ -1,0 +1,77 @@
+body{
+    width: 960px;
+}
+
+h1, h3 {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+p{
+    font-family: 'Droid Sans', sans-serif;
+}
+
+#blogLogo{
+    height: 300px;
+    width: 300px;
+
+}
+
+#textMain{
+    padding: 20px;
+}
+
+#logoMain{
+    padding:20px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+
+    padding: 10px;
+    overflow: hidden;
+    width: 900px;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+
+    display: inline-block;
+    height: 10px;
+    background: lightgrey;
+    color: black;
+    font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+li a :hover {
+    color: blue;
+
+}
+
+#formEntry{
+    display:inline-block;
+    text-align: center;
+}
+
+
+
+
+form{
+
+    padding: 20px;
+
+    font-family: 'Droid Sans', sans-serif;
+
+
+}
+
+
