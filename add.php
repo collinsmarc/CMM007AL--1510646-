@@ -82,7 +82,7 @@ include("connection.php"); //establish connection to DB  ?>
                     $conn->close();
 
 
-                }else{
+                } else {
                     header("Location:index.php");
                 }
 

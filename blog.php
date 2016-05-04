@@ -1,6 +1,6 @@
 <?php
 include("connection.php"); //establish connection to DB
-$choice=$_GET["category"];
+$choice = $_GET["category"];
 ?>
 
 
@@ -21,29 +21,26 @@ $choice=$_GET["category"];
 
 <header>
     <?
-         switch ($choice) {
-            case "work":
-                        echo " <h1>myBlog - Work </h1>
+    switch ($choice) {
+        case "work":
+            echo " <h1>myBlog - Work </h1>
     <h3>because the internet needs to know what I think about work</h3>";
-             break;
-         case "university":
-                      echo " <h1>myBlog - University </h1>
+            break;
+        case "university":
+            echo " <h1>myBlog - University </h1>
      <h3>because the internet needs to know what I think about university</h3>";
-             break;
-         case "family":
-                      echo " <h1>myBlog - Family </h1>
+            break;
+        case "family":
+            echo " <h1>myBlog - Family </h1>
     <h3>because the internet needs to know what I think about family</h3>";
             break;
 
 
         default:
-                       echo " <h1>myBlog</h1>
+            echo " <h1>myBlog</h1>
     <h3>because the internet needs to know what I think</h3>";
     }
-     ?>
-
-
-
+    ?>
 
 
     <nav id="quickLinks">
@@ -61,7 +58,7 @@ $choice=$_GET["category"];
 
     <?
 
-    if ($choice=="work") {
+    if ($choice == "work") {
 
 
         $sql = "SELECT * FROM blogview where category LIKE 'Work'";
@@ -77,9 +74,7 @@ $choice=$_GET["category"];
             echo "<br>";
 
         }
-    }
-
-    elseif($choice=="university") {
+    } elseif ($choice == "university") {
 
 
         $sql = "SELECT * FROM blogview where category LIKE 'University'";
@@ -95,9 +90,7 @@ $choice=$_GET["category"];
             echo "<br>";
 
         }
-    }
-
-    elseif($choice=="family") {
+    } elseif ($choice == "family") {
 
 
         $sql = "SELECT * FROM blogview where category LIKE 'Family'";
@@ -113,9 +106,7 @@ $choice=$_GET["category"];
             echo "<br>";
 
         }
-    }
-
-    else{
+    } else {
 
         $sql = "SELECT * FROM blogview";
         $result = $db->query($sql);
@@ -131,7 +122,6 @@ $choice=$_GET["category"];
 
         }
     }
-
 
 
     ?>
