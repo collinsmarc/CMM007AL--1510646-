@@ -3,9 +3,8 @@ include("connection.php"); //establish connection to DB
 $choice = $_GET["category"];
 ?>
 
-
+<!--all of the metadata for the page, including unsemantic, CSS stylesheet and fonts from google-->
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +17,9 @@ $choice = $_GET["category"];
     <title>Show- myBlog</title>
 </head>
 <body>
+
+
+<!--header will change depending which link they have clicked in navbar-->
 
 <header>
     <?
@@ -54,10 +56,11 @@ $choice = $_GET["category"];
     </nav>
 </header>
 
+<!--Area will contain results of SQL query depending which link they clicked in navbar, using GET method, default is all entries-->
+
 <main id="blogList">
 
     <?
-
     if ($choice == "work") {
 
 
@@ -128,6 +131,8 @@ $choice = $_GET["category"];
 
 
 </main>
+
+<!--footer for the site with my name and year of design-->
 
 <footer>
     <p>Designed by [Marc Collins],[2016]</p>

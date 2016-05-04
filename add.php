@@ -1,6 +1,8 @@
 <?php
 include("connection.php"); //establish connection to DB  ?>
 
+
+<!--all of the metadata for the page, including unsemantic, CSS stylesheet and fonts from google-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +17,11 @@ include("connection.php"); //establish connection to DB  ?>
 </head>
 <body>
 
+
+<!--the header for the page including the title and the navbar-->
+
 <header>
     <h1>myBlog</h1>
-
     <h3>because the internet needs to know what I think</h3>
     <nav id="quickLinks">
         <ul>
@@ -31,6 +35,7 @@ include("connection.php"); //establish connection to DB  ?>
 </header>
 
 
+<!--self referencing form, if post will add to my database otherwise if get will present the form for user to fill-->
 <main class="grid container">
     <section id="formAdd">
         <div id="formEntry">
@@ -95,6 +100,7 @@ include("connection.php"); //establish connection to DB  ?>
     </section>
 </main>
 
+<!--footer for the site with my name and year of design-->
 <footer>
     <p>Designed by [Marc Collins],[2016]</p>
 </footer>

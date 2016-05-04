@@ -1,3 +1,6 @@
+
+<!--all of the metadata for the page, including unsemantic, CSS stylesheet and fonts from google-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +15,10 @@
 </head>
 <body>
 
+<!--the header for the page including the title and the navbar-->
+
 <header>
     <h1>myBlog</h1>
-
     <h3>because the internet needs to know what I think</h3>
     <nav id="quickLinks">
         <ul>
@@ -27,6 +31,7 @@
     </nav>
 </header>
 
+<!--main area on homepage, 2 sections, text and the logo- using unsemantic-->
 
 <main class="grid container">
     <section class="grid-60" tablet-grid="grid-60" mobile-grid="grid-60" id="textMain">
@@ -48,6 +53,8 @@
 
     </section>
 </main>
+
+<!--footer for the site with my name and year of design-->
 
 <footer>
     <p>Designed by [Marc Collins],[2016]</p>

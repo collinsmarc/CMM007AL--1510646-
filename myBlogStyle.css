@@ -1,10 +1,7 @@
+
+/*general elements*/
 body {
     width: 960px;
-}
-
-header {
-    margin-left: 20px;
-
 }
 
 h1, h3, h4 {
@@ -15,24 +12,22 @@ p {
     font-family: 'Droid Sans', sans-serif;
 }
 
-#blogLogo {
-    height: 300px;
-    width: 300px;
 
+
+/*pagelayout elements*/
+
+header {
+    margin-left: 20px;
 }
 
-#textMain {
-    padding: 20px;
-    text-align: justify;
+footer {
+    color: darkslategray;
+    padding: 30px;
 }
 
-#logoMain {
-    padding: 20px;
-}
 
-#blogList {
-    padding: 20px;
-}
+
+/*navbar styling for use throughout page*/
 
 ul {
     list-style-type: none;
@@ -66,6 +61,28 @@ a:hover {
     color: white;
 }
 
+
+
+/*homepage styling including logo*/
+
+#blogLogo {
+    height: 300px;
+    width: 300px;
+
+}
+
+#textMain {
+    padding: 20px;
+    text-align: justify;
+}
+
+#logoMain {
+    padding: 20px;
+}
+
+
+/*form styling for form for adding blog entries*/
+
 #formEntry {
     display: inline-block;
     text-align: left;
@@ -87,9 +104,7 @@ form {
     height: 30px;
 }
 
-footer {
-    color: darkslategray;
-    padding: 30px;
+
+#blogList {
+    padding: 20px;
 }
-
-

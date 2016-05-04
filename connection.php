@@ -1,3 +1,5 @@
+<!--simple connection script to be used throughout site-->
+
 <?php
 define ('DB_SERVER', 'ap-cdbr-azure-east-c.cloudapp.net');
 define ('DB_USERNAME','b4f37ec3582045');
