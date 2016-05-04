@@ -21,11 +21,11 @@ include("connection.php"); //establish connection to DB  ?>
     <h3>because the internet needs to know what I think</h3>
     <nav id="quickLinks">
         <ul>
-            <li><a href="blog.html">All Blog Items</a></li>
-            <li><a href="#">Work Items</a></li>
-            <li><a href="#">University Items</a></li>
-            <li><a href="#">Family Items</a></li>
-            <li><a href="add.html">Insert a Blog Item</a></li>
+            <li><a href="blog.php">All Blog Items</a></li>
+            <li><a href="blog.php?category=work">Work Items</a></li>
+            <li><a href="blog.php?category=university">University Items</a></li>
+            <li><a href="blog.php?category=family">Family Items</a></li>
+            <li><a href="add.php">Insert a Blog Item</a></li>
         </ul>
     </nav>
 </header>
@@ -49,9 +49,9 @@ include("connection.php"); //establish connection to DB  ?>
                 <br>
                 Category: <select name="category" required>
                     <option value="none"></option>
-                    <option value="politics">Politics</option>
-                    <option value="sport">Sport</option>
-                    <option value="technology">Technology</option>
+                    <option value="work">Work</option>
+                    <option value="university">University</option>
+                    <option value="family">Family</option>
                 </select>
                 <br>
                 Submitted By: <input type="text" name="submittedAuthor">
