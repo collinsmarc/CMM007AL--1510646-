@@ -1,10 +1,9 @@
-body{
+body {
     width: 960px;
 }
 
-header{
+header {
     margin-left: 20px;
-
 
 }
 
@@ -12,26 +11,24 @@ h1, h3 {
     font-family: 'Montserrat', sans-serif;;
 }
 
-p{
+p {
     font-family: 'Droid Sans', sans-serif;
 }
 
-#blogLogo{
+#blogLogo {
     height: 300px;
     width: 300px;
 
 }
 
-#textMain{
+#textMain {
     padding: 20px;
     text-align: justify;
 }
 
-#logoMain{
-    padding:20px;
+#logoMain {
+    padding: 20px;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -39,7 +36,7 @@ ul {
 
     padding: 10px;
     overflow: hidden;
-    width: 960px;
+    width: 100%;
 }
 
 li {
@@ -55,28 +52,22 @@ li a {
     color: black;
     font-family: 'Droid Sans', sans-serif;
     text-decoration: none;
-    padding: 15px;
+
     margin-left: 5px;
-    margin-right: 5px;}
+    margin-right: 5px;
+}
 
 a:hover {
     background-color: lightslategrey;
     color: white;
 }
 
-
-
-
-
-#formEntry{
-    display:inline-block;
-    text-align:left;
+#formEntry {
+    display: inline-block;
+    text-align: left;
 }
 
-
-
-
-form{
+form {
     padding: 20px;
     margin-left: 200px;
     margin-right: 200px;
@@ -84,9 +75,7 @@ form{
 
 }
 
-
-
-footer{
+footer {
     color: darkslategray;
     padding: 30px;
 }
