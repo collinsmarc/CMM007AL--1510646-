@@ -1,6 +1,6 @@
 <?php
 include("connection.php"); //establish connection to DB
-
+$choice=$_GET["category"];
 ?>
 
 
@@ -20,7 +20,30 @@ include("connection.php"); //establish connection to DB
 <body>
 
 <header>
-    <h1>myBlog</h1>
+    <?
+         switch ($choice) {
+            case "work":
+                        echo " <h1>myBlog - Work Exclusives</h1>
+    <h3>because the internet needs to know what I think</h3>";
+             break;
+         case "university":
+                      echo " <h1>myBlog - University Exclusives </h1>
+     <h3>because the internet needs to know what I think</h3>";
+             break;
+         case "family":
+                      echo " <h1>myBlog - Family Exclusives</h1>
+    <h3>because the internet needs to know what I think</h3>";
+            break;
+
+
+        default:
+                       echo " <h1>myBlog</h1>
+    <h3>because the internet needs to know what I think</h3>";
+    }
+     ?>
+
+
+
 
     <h3>because the internet needs to know what I think</h3>
     <nav id="quickLinks">
@@ -38,20 +61,78 @@ include("connection.php"); //establish connection to DB
 
     <?
 
-    $choice=$_GET["category"];
-    $sql = "SELECT * FROM blogview where category LIKE $choice";
-    $result = $db->query($sql);
+    if ($choice=="work") {
 
 
-    while ($row = $result->fetch_array()) {
-        echo "<h3><a href='#'>".$row["entryTitle"]."</a> by ".$row["submitter"]."</h3> ";
-        echo "<h4>".$row["category"]."</h4>";
-        echo"<p>".$row["entrySummary"]."</p>";
-        echo "<br>";
-        echo"<p>-------------------------------------------------------------------</p>";
-        echo "<br>";
+        $sql = "SELECT * FROM blogview where category LIKE 'Work'";
+        $result = $db->query($sql);
 
+
+        while ($row = $result->fetch_array()) {
+            echo "<h3>" . $row["entryTitle"] . "</a> by " . $row["submitter"] . "</h3> ";
+            echo "<h4>" . $row["category"] . "</h4>";
+            echo "<p>" . $row["entrySummary"] . "</p>";
+            echo "<br>";
+            echo "<p>-------------------------------------------------------------------</p>";
+            echo "<br>";
+
+        }
     }
+
+    elseif($choice=="university") {
+
+
+        $sql = "SELECT * FROM blogview where category LIKE 'University'";
+        $result = $db->query($sql);
+
+
+        while ($row = $result->fetch_array()) {
+            echo "<h3>" . $row["entryTitle"] . "</a> by " . $row["submitter"] . "</h3> ";
+            echo "<h4>" . $row["category"] . "</h4>";
+            echo "<p>" . $row["entrySummary"] . "</p>";
+            echo "<br>";
+            echo "<p>-------------------------------------------------------------------</p>";
+            echo "<br>";
+
+        }
+    }
+
+    elseif($choice=="family") {
+
+
+        $sql = "SELECT * FROM blogview where category LIKE 'Family'";
+        $result = $db->query($sql);
+
+
+        while ($row = $result->fetch_array()) {
+            echo "<h3>" . $row["entryTitle"] . "</a> by " . $row["submitter"] . "</h3> ";
+            echo "<h4>" . $row["category"] . "</h4>";
+            echo "<p>" . $row["entrySummary"] . "</p>";
+            echo "<br>";
+            echo "<p>-------------------------------------------------------------------</p>";
+            echo "<br>";
+
+        }
+    }
+
+    else{
+
+        $sql = "SELECT * FROM blogview where";
+        $result = $db->query($sql);
+
+
+        while ($row = $result->fetch_array()) {
+            echo "<h3>" . $row["entryTitle"] . "</a> by " . $row["submitter"] . "</h3> ";
+            echo "<h4>" . $row["category"] . "</h4>";
+            echo "<p>" . $row["entrySummary"] . "</p>";
+            echo "<br>";
+            echo "<p>-------------------------------------------------------------------</p>";
+            echo "<br>";
+
+        }
+    }
+
+
 
     ?>
 
